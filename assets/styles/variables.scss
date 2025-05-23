@@ -1,12 +1,9 @@
 $primary-color: #2196F3;
 $secondary-color: #FFA500;
-$tertiary-color: #4CAF50;
 $card-gap: 1rem;
 $primary-font: 'Montserrat', sans-serif;
 $secondary-font: 'Open Sans', sans-serif;
-$container-max-width: 1200px;
 
-@function gradient($color) {
-  @return linear-gradient(to bottom, $color, darken($color, 10%));
+@mixin gradient($color) {
+  background-image: linear-gradient(to bottom, $color, darken($color, 10%));
 }
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap');

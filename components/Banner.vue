@@ -1,26 +1,23 @@
 <template>
-    <div class="banner" :style="{ backgroundColor: color }">
-      <div class="container">
-        <h2>{{ title }}</h2>
-        <p>{{ description }}</p>
-      </div>
+  <div class="banner" :class="{ 'gradient': true }" :style="{ backgroundColor: color }">
+    <div class="container">
+      <h2>{{ title }}</h2>
+      <p>{{ description }}</p>
     </div>
-  </template>
+  </div>
+</template>
 
 <style scoped>
+@import '@/assets/styles/variables.scss';
+
 .banner {
-    font-family: $secondary-font;
-    font-weight: 600;
+  padding: 4rem 0;
+  text-align: center;
+  color: white;
+  font-family: $secondary-font;
+}
+
+.gradient {
+  @include gradient(v-bind(color));
 }
 </style>
-
-<script setup>
-defineProps({
-    title: String,
-    description: String,
-    color: {
-      type: String,
-      default: '#4CAF50'
-    }
-})
-</script>

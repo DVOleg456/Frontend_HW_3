@@ -4,8 +4,6 @@
         <h1>Мой Nuxt-проект</h1>
         <nav>
           <NuxtLink to="/" class="nav-link">Главная</NuxtLink>
-          <NuxtLink to="/card1" class="nav-link">Основы веб-разработки</NuxtLink>
-          <NuxtLink to="/card2" class="nav-link">Фреймворк Nuxt.js</NuxtLink>
         </nav>
       </div>
     </header>
