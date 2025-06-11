@@ -1,0 +1,11 @@
+$primary: white;
+
+@mixin card-style($bg-color: #f0f0f0) {
+  background-color: $bg-color;
+  border: 3px dashed $primary;
+  padding: 15px;
+  color: yellow;
+  font-weight: normal;
+  text-align: left;
+  border-radius: 12px;
+}
